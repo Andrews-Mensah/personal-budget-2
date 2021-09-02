@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %></title>
+</head>
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li class="header">
+                <a href="index.html">
+                    <span class="title">
+                        <h2><%= title %></h2>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/" id="<%= path === '/index' ? 'active' : '' %>">
+                    <span class="icon"><i class="zmdi zmdi-view-dashboard"></i></span>
+                    <span class="title"><%= pageName %></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="get-envelopes" id="<%= path === '/get' ? 'active' : '' %>">
+                    <span class="icon"><i class="zmdi zmdi-collection-plus"></i></span>
+                    <span class="title">Get all envelopes</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="get-updateenvelope" id="<%= path === '/get-updateenvelope' ? 'active' : '' %>">
+                    <span class="icon"><i class="zmdi zmdi-chart-donut"></i></span>
+                    <span class="title">Update an envelope</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+</div>
